@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.chapter3.WeatherController">
+
+    <top>
+        <Label text="Addis Ababa" />
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <TextField fx:id="cityField" promptText="Enter city"/>
+            <Label text="22°C"/>
+            <Label text="Sunny"/>
+            <Ellipse radiusX="30" radiusY="15"/>
+            <Button fx:id="refreshButton" text="Refresh"/>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="15">
+            <Label text="Mon 21°C"/>
+            <Label text="Tue 23°C"/>
+            <Label text="Wed 20°C"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
